@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include <iomanip> // setw, setfill
+#include <iomanip> 
 using namespace std;
 
 int main() {
@@ -15,10 +15,10 @@ int main() {
         int d2 = x % 10; x /= 10;
         int d3 = x % 10; x /= 10;
         int d4 = x % 10; x /= 10;
-        int d5 = x % 10; // x/=10 not needed further
+        int d5 = x % 10; 
 
-        int sumFirst3 = d5 + d4 + d3; // перші три (ліві)
-        int sumLast3  = d2 + d1 + d0; // останні три (праві)
+        int sumFirst3 = d5 + d4 + d3; 
+        int sumLast3  = d2 + d1 + d0; 
 
         if (sumFirst3 == sumLast3) {
             ++count;
@@ -30,8 +30,8 @@ int main() {
         }
     }
 
-    cout << "Кількість щасливих квитків: " << count << "\n";
-    cout << "Декілька прикладів: ";
+    cout << "number of tickets: " << count << "\n";
+    cout << "examples ";
     for (auto &s : examples) cout << s << " ";
     cout << "\n";
     return 0;

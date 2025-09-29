@@ -1,18 +1,17 @@
 #include <iostream>
-#include <cstring> // для strlen
+#include <cstring> 
 using namespace std;
 
 int main() {
-    const char *s = "Привіт, світ!";
+    const char *s = "hello world";
     if (s == nullptr) {
-        cout << "Рядок пустий (nullptr)\n";
+        cout << "unknown (nullptr)\n";
         return 0;
     }
-    cout << "Довжина (strlen): " << strlen(s) << "\n";
+    cout << "lenght (strlen): " << strlen(s) << "\n";
 
-    // Альтернатива: ручний підрахунок
     size_t len = 0;
     while (s[len] != '\0') ++len;
-    cout << "Довжина (ручний підрахунок): " << len << "\n";
+    cout << "lenght (manual): " << len << "\n";
     return 0;
 }

@@ -7,7 +7,7 @@ long long first = (a % 2 !=0) ? (a+1) : a;
 long long last =(b % 2 != 0) ? (b - 1) : b;
 if (first > last) return 0LL;
 long long n = ((last - first)/2) + 1;
-return n*(first + last)/2;//safe with long long
+return n*(first + last)/2;
 }
 int main() {
 long long a, b;
